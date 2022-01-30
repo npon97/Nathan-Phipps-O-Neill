@@ -6,5 +6,3 @@ of links for various interesting parts of the site and my external resumes/portf
 * [LinkedIn Profile](www.linkedin.com/in/nathanphippsoneill/)
 * [CV](CV_NathanPhippsONeill_2022.html) (**Warning**: Some formatting issues may exist 
 depending on the browser you use. I will try to keep things legible nonetheless.)
-
-## 
