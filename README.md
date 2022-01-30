@@ -1,8 +1,8 @@
-## Welcome to GitHub Pages
+# Home
 
-You can use the [editor on GitHub](https://github.com/npon97/nathanphippsoneill/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Welcome to my site when you can interact with my resume and projects. Here is a quick list 
+of links for various interesting parts of the site:  
+* [CV](Nathan-Phipps-O-Neill/CV_NathanPhippsONeill_2022.html)
 
 ### Markdown
 
