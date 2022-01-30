@@ -1,6 +1,5 @@
-title: Minimal theme
+title: Nathan Phipps O'Neill
 logo: /assets/img/undergrad_gown.jpeg
-description: Minimal is a theme for GitHub Pages.
-show_downloads: true
-google_analytics:
+description: Personal site describing resumes and projects.
+show_downloads: false
 theme: jekyll-theme-minimal
