@@ -1,25 +1,23 @@
 var mqtt;
 var reconnectTimeout = 2000;
-topic = "python/mqtt/ds4msg"
 
 function MQTTconnect() {
-    console.log("Initiate MQTT Connect ...")
-    if (typeof path == "undefined") {
-        path = '/mqtt';
-    }
-    mqtt = new Paho.MQTT.Client(
-            host,
-            port,
-            path,
-            "web_" + parseInt(Math.random() * 100, 10)
-    );
+if (typeof path == "undefined") {
+    path = '/mqtt';
+}
+mqtt = new Paho.MQTT.Client(
+        host,
+        port,
+        path,
+        "web_" + parseInt(Math.random() * 100, 10)
+);
     var options = {
         timeout: 3,
         useSSL: useTLS,
         cleanSession: cleansession,
         onSuccess: onConnect,
         onFailure: function (message) {
-            console.log("Connection failed: " + message.errorMessage + "Retrying");
+            $('#status').val("Connection failed: " + message.errorMessage + "Retrying");
             setTimeout(MQTTconnect, reconnectTimeout);
         }
     };
@@ -36,23 +34,24 @@ function MQTTconnect() {
 }
 
 function onConnect() {
-    console.log('Connected to ' + host + ':' + port + path);
+    $('#status').val('Connected to ' + host + ':' + port + path);
     // Connection succeeded; subscribe to our topic
     mqtt.subscribe(topic, {qos: 0});
+    $('#topic').val(topic);
 }
 
 function onConnectionLost(response) {
     setTimeout(MQTTconnect, reconnectTimeout);
-    console.log("connection lost: " + responseObject.errorMessage + ". Reconnecting");
+    $('#status').val("connection lost: " + responseObject.errorMessage + ". Reconnecting");
+
 };
 
 function onMessageArrived(message) {
 
-    var topic_recv = message.destinationName;
-    var payload_recv = message.payloadString;
+    var topic = message.destinationName;
+    var payload = message.payloadString;
 
-    console.log(topic_recv);
-    console.log(payload_recv);
+    $('#ws').prepend('<li>' + topic + ' = ' + payload + '</li>');
 };
 
 
