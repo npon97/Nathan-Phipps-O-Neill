@@ -8,8 +8,8 @@ const client = mqtt.connect(host + ":" + port)
 client.subscribe(topic)
 
 client.on("message", function (topic, payload) {
-  alert([topic, payload].join(": "))
-  client.end()
+  document.getElementById("mqtt-output").innerHTML += "["+topic+"]\t"+payload+"\n";
 })
 
-client.publish(topic, "hello world!")
+client.publish(topic, 
+    "If you're seeing this message, it's coming from a public mqtt broker.");
