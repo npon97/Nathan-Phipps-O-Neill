@@ -6,6 +6,7 @@
 //
 // Scripts
 // 
+console.log("SCRIPT JS START REACHED");
 
 window.addEventListener('DOMContentLoaded', event => {
 
@@ -30,5 +31,9 @@ window.addEventListener('DOMContentLoaded', event => {
             }
         });
     });
-
+    console.log("Side navigation DOM loaded");
+    
+    
 });
+
+console.log("SCRIPTS JS END REACHED");
