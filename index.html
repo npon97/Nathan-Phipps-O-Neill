@@ -87,13 +87,33 @@
                 </div>
                 <!-- BSA -->
                 <h3 class="mb-4">Binaural Sensory Augmentation</h3>
+                <p class="lead mb-5">
+
+                    This project was a sole project for the requirements of my masters degree in electronic and computer
+                    engineering. The fundamental goal / principal of the project was to build a device that could be 
+                    used as a navigational aid by using non-linguistic spatial auditory cues.
+                    <br>
+                    
+                    The pictures below show a few key components of the prototype:
+                    <ol>
+                        <li>The main compute module (Raspberry Pi in a green case)</li>
+                        <li>The GPS/GNSS/GLONASS module used for location retrieval (inside the red case)</li>
+                        <li>The Magnetometer used for direction retrieval (inside the red case too)</li>
+                        <li>The headphones used to output spatial audio to the user</li>
+                    </ol>
+                    The compute module would retrieve input from the GPS module and direction information from the 
+                    magnetometer module and use it to render spatial audio using the OpenAL library. This library is 
+                    usually used for games/virtual environments, but in this case, it's used in real life.
+                    Then the spatial audio is output to the headphones.
+
+                </p>
                 <div class="row">
                     <div class="col">
                         <img src="assets/img/masters_project_headphones_with_sensors.jpg"
-                            class="w-100 shadow-1-strong rounded mb-4" alt="masters_project_headphones_with_sensors" />
+                            class="img-fluid w-100 shadow-1-strong rounded mb-4" alt="masters_project_headphones_with_sensors" />
                     </div>
                     <div class="col">
-                        <img src="assets/img/masters_project_whole_setup.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                        <img src="assets/img/masters_project_whole_setup.jpg" class="img-fluid w-100 shadow-1-strong rounded mb-4"
                             alt="masters_project_whole_setup" />
                     </div>
                 </div>
