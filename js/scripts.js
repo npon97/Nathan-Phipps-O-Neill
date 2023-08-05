@@ -35,6 +35,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
 $(document).ready(function () {
   $("#navigationRef").load("components/Navigation.html");
+  $("#projectsRef").load("components/Projects.html");
 });
 
 console.log("SCRIPTS JS END REACHED");
