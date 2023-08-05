@@ -23,28 +23,7 @@
 
 <body id="page-top">
     <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">
-            <span class="d-block d-lg-none">Nathan Phipps O'Neill</span>
-            <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2"
-                    src="assets/img/profile.jpg"
-                    alt="A shoulders-up grey-scale picture of Nathan in his Masters graduation gown." /></span>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
-            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span
-                class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
-            </ul>
-        </div>
-    </nav>
+    <div id="navigationRef"></div>
     <!-- Page Content-->
     <div class="container-fluid p-0">
         <!-- About-->
@@ -93,23 +72,24 @@
                     used as a navigational aid by using non-linguistic spatial auditory cues.
                     <br>
                     The pictures below show a few key components of the prototype:
-                    <ol>
-                        <li>The main compute module (Raspberry Pi in a green case)</li>
-                        <li>The Lithium Ion battery (black block)</li>
-                        <li>The GPS/GNSS/GLONASS module used for location retrieval (inside the red case)</li>
-                        <li>The Magnetometer used for direction retrieval (inside the red case too)</li>
-                        <li>The headphones used to output spatial audio to the user</li>
-                    </ol>
-                    The compute module would retrieve input from the GPS module and direction information from the
-                    magnetometer module and use it to render spatial audio using the OpenAL library. This library is
-                    usually used for games/virtual environments, but in this case, it's used in real life.
-                    Then the spatial audio is output to the headphones.
+                <ol>
+                    <li>The main compute module (Raspberry Pi in a green case)</li>
+                    <li>The Lithium Ion battery (black block)</li>
+                    <li>The GPS/GNSS/GLONASS module used for location retrieval (inside the red case)</li>
+                    <li>The Magnetometer used for direction retrieval (inside the red case too)</li>
+                    <li>The headphones used to output spatial audio to the user</li>
+                </ol>
+                The compute module would retrieve input from the GPS module and direction information from the
+                magnetometer module and use it to render spatial audio using the OpenAL library. This library is
+                usually used for games/virtual environments, but in this case, it's used in real life.
+                Then the spatial audio is output to the headphones.
 
-                    <b>
-                        <a href="/assets/docs/Paper_BinauralSensoryAugmentation.pdf" target="_blank" rel="noopener noreferrer">
-                            To view the paper for this project and/or to get more detail, click here.
-                        </a>
-                    </b>
+                <b>
+                    <a href="/assets/docs/Paper_BinauralSensoryAugmentation.pdf" target="_blank"
+                        rel="noopener noreferrer">
+                        To view the paper for this project and/or to get more detail, click here.
+                    </a>
+                </b>
                 </p>
                 <div class="row">
                     <div class="col">
