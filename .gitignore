@@ -1,0 +1,9 @@
+# _site will be generated anyway
+_site/
+
+# Gemfile and lock
+Gemfile
+Gemfile.lock
+
+# Jekyll Cache Folder
+.jekyll-cache/
